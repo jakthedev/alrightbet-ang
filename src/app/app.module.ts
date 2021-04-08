@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser'; 
 import { BrowserAnimationsModule } from '@angular/platform-broswer/animations';  
-import { MatToolbarModule } from '@angular/material/toolbar'; 
+import { MatToolbarModule } from '@angular/material/toolbar';  
+import { MatListModule } from '@angular/material/list'
 import { FlexLayoutModule } from '@angular/flex-layout'; 
 
 
@@ -21,7 +22,8 @@ import { SportsComponent } from './sports/sports.component';
     AppRoutingModule,
     BrowserAnimationsModule, 
     FlexLayoutModule,
-    MatToolbarModule
+    MatToolbarModule, 
+    MatListModule
     
   ],
   providers: [],

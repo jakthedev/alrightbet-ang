@@ -1,1 +1,19 @@
-<p>sports works!</p>
+<div class="container" 
+    fxLayout="column" 
+    fxLayoutGap="10px"> 
+
+    <mat-list fxFlex> 
+        <mat-list-item *ngFor="let league of leagues">  
+            <!-- This acts as a for loop for us to get access to the properties of each object  --> 
+            <!-- Inside the leagues array, Then we can make use of them to define the template --> 
+            <img matListAvatar src={{league.image}} alt={{league.name}}>
+            <!-- This source will get the value of league.image, that is defined in the javascript --> 
+            <!-- Javascript object in the typescript class, that is available to do the layout here --> 
+            <h1 matLine> {{league.name}} </h1> 
+            <p matLine> 
+                <span> {{league.description</span>}} 
+            </p>
+        </mat-list-item>
+    </mat-list>
+
+</div>
