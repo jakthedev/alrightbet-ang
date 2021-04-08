@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser'; 
-import { BrowserAnimationsModule } from '@augular/platform-broswer/animations';  
+import { BrowserAnimationsModule } from '@angular/platform-broswer/animations';  
 import { MatToolbarModule } from '@angular/material/toolbar'; 
 import { FlexLayoutModule } from '@angular/flex-layout'; 
 
@@ -9,17 +9,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component'; 
 
 import 'hammerjs';
+import { SportsComponent } from './sports/sports.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SportsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule 
+    AppRoutingModule,
     BrowserAnimationsModule, 
-    FlexLayoutModule, 
+    FlexLayoutModule,
     MatToolbarModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
